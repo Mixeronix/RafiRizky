@@ -71,6 +71,10 @@
 	font-family: OpenSauceOneBold;
 }
 
+.OpenSauceOneRegular {
+	font-family: OpenSauceOneRegular;
+}
+
 .OpenSauceOneMedium {
 	font-family: OpenSauceOneMedium;
 }
@@ -85,4 +89,16 @@
 
 #thirdInServices {
 	margin-top: -0.3rem !important;
+}
+
+iframe {
+	min-height: 300px;
+}
+
+@media (max-width: 992px) {
+	.nav-item > * {
+		font-size: 2rem !important;
+		font-weight: 600;
+		text-align: center;
+	}
 }

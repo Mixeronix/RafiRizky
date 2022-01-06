@@ -17,9 +17,11 @@
 	</head>
 
 	<body class="bg-lightGray px-3">
+		<!-- Navigation -->
+
 		<nav class="navbar navbar-expand-lg fixed-top navbar-light px-5 py-3 bg-white">
 			<div class="container-fluid">
-				<a class="navbar-brand OpenSauceOneBlack fs-5" href="#">Rafi Rizky</a>
+				<a class="navbar-brand OpenSauceOneBlack fs-5 btn" onclick='btn_to("home")'>Rafi Rizky</a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
@@ -34,16 +36,19 @@
 					<div class="offcanvas-body">
 						<ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
 							<li class="nav-item">
-								<a class="nav-link my-3 my-lg-0 fs-6 mx-5 blue poppins-m" href="https://www.behance.net/rafirizky" target="_blank">Work</a>
+								<a class="nav-link my-3 my-lg-0 fs-6 mx-3 mx-xl-4 blue poppins-m" href="https://www.behance.net/rafirizky" target="_blank">Work</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link my-3 my-lg-0 fs-6 mx-5 blue poppins-m" href="#services">Services</a>
+								<div class="nav-link my-3 my-lg-0 fs-6 mx-3 mx-xl-4 blue poppins-m btn" onclick='btn_to("services")'>Services</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link my-3 my-lg-0 fs-6 mx-5 blue poppins-m" href="#">Contact</a>
+								<div class="nav-link my-3 my-lg-0 fs-6 mx-3 mx-xl-4 blue poppins-m btn" onclick='btn_to("workflow")'>Workflow</div>
+							</li>
+							<li class="nav-item">
+								<div class="nav-link my-3 my-lg-0 fs-6 mx-3 mx-xl-4 blue poppins-m btn" onclick='btn_to("contact")'>Contact</div>
 							</li>
 						</ul>
-						<div class="ms-auto blue OpenSauceOneMedium fs-6">
+						<div onclick='btn_to("contact")' class="ms-auto blue OpenSauceOneMedium btn fs-6">
 							<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="green" class="bi bi-dot" viewBox="0 0 16 16">
 								<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
 							</svg>
@@ -54,9 +59,13 @@
 			</div>
 		</nav>
 
+		<!-- Main Container -->
+
 		<main class="container pt-5 mt-5">
-			<div class="row py-5 mb-5 mt-5 mx-5 justify-content-around">
-				<div class="col-4 p-3 py-5">
+			<!-- First row -->
+
+			<div class="row my-lg-5 mt-5 mx-lg-5 justify-content-around">
+				<div class="col-11 col-lg-4 px-0 px-lg-3 py-5">
 					<video class="col-12" autoplay loop muted>
 						<source src="animation.mp4" type="video/mp4" />
 						Your browser does not support the video tag.
@@ -66,18 +75,20 @@
 					<p class="OpenSauceSansMedium ls-3 fs-5">With 3 years of Experience in solving creative problem with Motion!</p>
 				</div>
 
-				<div class="col-5 bg-white row justify-content-center shadow-lg">
-					<h4 class="blue OpenSauceOneBold align-self-center col-4">Rafi Rizky Showreel 2022</h4>
-				</div>
+				<iframe class="col-12 col-lg-5 bg-white p-0 shadow-lg" src="https://www.youtube.com/embed/UPobDneYYf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
-			<div id="services" class="row my-5 py-5">
-				<h1 class="col-5 fs-0 blue OpenSauceOneBlack">SERVICES</h1>
-				<hr class="col line m-0 align-self-center" />
+			<!-- Services, separator line -->
+
+			<div id="services" class="row mt-5 my-lg-5 py-5">
+				<h1 class="col-12 text-center text-sm-start col-sm-7 col-md-5 fs-0 blue OpenSauceOneBlack">SERVICES</h1>
+				<hr class="d-none d-sm-block col line m-0 align-self-center" />
 			</div>
 
-			<div class="row justify-content-evenly pb-5 my-5">
-				<div class="col-2 bg-white shadow-lg rounded-3 py-4 px-3">
+			<!-- Services section -->
+
+			<div class="row justify-content-evenly my-lg-5">
+				<div class="col-11 col-sm-10 col-md-8 col-lg-2 my-4 my-lg-0 bg-white shadow-lg rounded-3 py-4 px-3">
 					<div class="row mx-0 mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" widht="25" height="25" fill="#2360d1" class="col-2 m-0 p-0 bi bi-symmetry-vertical" viewBox="0 0 16 16">
 							<path d="M7 2.5a.5.5 0 0 0-.939-.24l-6 11A.5.5 0 0 0 .5 14h6a.5.5 0 0 0 .5-.5v-11zm2.376-.484a.5.5 0 0 1 .563.245l6 11A.5.5 0 0 1 15.5 14h-6a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .376-.484zM10 4.46V13h4.658L10 4.46z" />
@@ -89,7 +100,7 @@
 					<p class="poppins-l fs-7 mb-0">Make ur design from Brand Promo, Social Media, and Livestream come to life by adding Animation!</p>
 				</div>
 
-				<div class="col-2 bg-white shadow-lg rounded-3 py-4 px-4">
+				<div class="col-11 col-sm-10 col-md-8 col-lg-2 my-4 my-lg-0 bg-white shadow-lg rounded-3 py-4 px-4">
 					<div class="row mx-0 mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" widht="25" height="25" fill="#2360d1" class="col-2 m-0 p-0 bi bi-symmetry-vertical" viewBox="0 0 16 16">
 							<path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z" />
@@ -102,7 +113,7 @@
 					<p class="poppins-l fs-7 mb-0">Producing a Well-Taught and High Quality Video for your Social Media Platform, Commercial & Promo.</p>
 				</div>
 
-				<div class="col-2 bg-white shadow-lg rounded-3 py-4 px-4">
+				<div class="col-11 col-sm-10 col-md-8 col-lg-2 my-4 my-lg-0 bg-white shadow-lg rounded-3 py-4 px-4">
 					<div class="row mx-0 mb-3">
 						<svg xmlns="http://www.w3.org/2000/svg" widht="25" height="25" fill="#2360d1" class="col-2 m-0 p-0 bi bi-symmetry-vertical" viewBox="0 0 16 16">
 							<path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
@@ -115,12 +126,37 @@
 				</div>
 			</div>
 
-			<div class="row my-5 py-5">
-				<h1 class="col-5 fs-0 blue OpenSauceOneBlack">WORKFLOW</h1>
-				<hr class="col line ms-5 m-0 align-self-center" />
+			<!-- Workflow, separator line -->
+
+			<div id="workflow" class="row mt-5 my-lg-5 py-5">
+				<h1 class="col-12 text-center text-sm-start col-sm-8 col-md-6 fs-0 blue OpenSauceOneBlack">WORKFLOW</h1>
+				<hr class="d-none d-sm-block col line m-0 align-self-center" />
+			</div>
+
+			<!-- Workflow section -->
+
+			<div class="row ms-1 mx-lg-5 px-3 my-lg-5">
+				<div class="col-12 col-md-5 my-2 my-md-0 col-lg-4">
+					<h1 class="blue OpenSauceOneBlack">Preparation</h1>
+					<p class="OpenSauceOneRegular"><b>Contact me first!</b> Before we get into it let’s make sure that we’re on the same page, from Time to Idea. In this stage, I would suggest to pre Branding Guideline, Timeline & Budget.</p>
+				</div>
+				<div class="col-12 col-md-7 my-2 my-md-0 col-lg-5 offset-lg-2 mb-lg-5">
+					<h1 class="blue OpenSauceOneBlack">Problem Solving</h1>
+					<p class="OpenSauceOneRegular"><b>Brainstorming.</b> From brief to finished product, we’ll have to go through problem-solving first, starting from Storyboard to Rough animation of the product. I would love to have discussions about your project in this stage, lots of insight would be very beneficial for both of us!</p>
+				</div>
+				<div class="col-12 col-md-5 my-2 my-md-0 col-lg-4">
+					<h1 class="blue OpenSauceOneBlack">Design</h1>
+					<p class="OpenSauceOneRegular"><b>Transparent Process.</b> After delivering the initial versions, i would actively contact you to keep updated with the project.</p>
+				</div>
+				<div class="col-12 col-md-7 my-2 my-md-0 col-lg-5 offset-lg-2">
+					<h1 class="blue OpenSauceOneBlack">Deliver</h1>
+					<p class="OpenSauceOneRegular"><b>Final Product.</b> Yay! we’ve finish your final product. After this stage, do not hesitate to contact me if there are questions to be asked, i’ll be glad to answer your questions keep our relationship healthy.</p>
+				</div>
 			</div>
 		</main>
 
+		<script src="jquery.js"></script>
+		<script src="app.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 	</body>

@@ -1,0 +1,88 @@
+:root {
+	--blue: #2360d1;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #f8f8f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--blue);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #1e54b8;
+}
+
+.bg-lightGray {
+	background-color: #f8f8f8;
+}
+
+.ls-3 {
+	letter-spacing: 0.03rem;
+	word-spacing: 0.1rem;
+}
+
+.fs-6 {
+	font-size: 1rem !important;
+}
+.fs-7 {
+	font-size: 0.9rem !important;
+}
+
+.blue {
+	color: var(--blue) !important;
+}
+
+.line {
+	height: 4px !important;
+	background-color: var(--blue) !important;
+	opacity: 1;
+}
+
+.fs-0 {
+	font-size: 3rem !important;
+}
+
+.poppins-m {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+}
+
+.poppins-l {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+}
+
+.OpenSauceOneBlack {
+	font-family: OpenSauceOneBlack;
+}
+
+.OpenSauceOneBold {
+	font-family: OpenSauceOneBold;
+}
+
+.OpenSauceOneMedium {
+	font-family: OpenSauceOneMedium;
+}
+
+.OpenSauceSansMedium {
+	font-family: OpenSauceSansMedium;
+}
+
+.OpenSauceSansBlack {
+	font-family: OpenSauceSansBlack;
+}
+
+#thirdInServices {
+	margin-top: -0.3rem !important;
+}

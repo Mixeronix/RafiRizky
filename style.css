@@ -1,5 +1,11 @@
 :root {
-	--blue: #2360d1;
+	--blue: #025cd1;
+	--light_blue: #0d62cb;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 /* width */
@@ -27,6 +33,14 @@
 	background-color: #f8f8f8;
 }
 
+.bg-blue {
+	background-color: #3153d8;
+}
+
+.gray {
+	color: #f8f8f8;
+}
+
 .ls-3 {
 	letter-spacing: 0.03rem;
 	word-spacing: 0.1rem;
@@ -39,8 +53,15 @@
 	font-size: 0.9rem !important;
 }
 
+.fs-8 {
+	font-size: 0.8rem !important;
+}
+
 .blue {
 	color: var(--blue) !important;
+}
+.light-blue {
+	color: var(--light_blue) !important;
 }
 
 .line {
@@ -79,6 +100,14 @@
 	font-family: OpenSauceOneMedium;
 }
 
+.OpenSauceOneLight {
+	font-family: OpenSauceOneLight;
+}
+
+.OpenSauceOneSemiBold {
+	font-family: OpenSauceOneSemiBold;
+}
+
 .OpenSauceSansMedium {
 	font-family: OpenSauceSansMedium;
 }
@@ -87,12 +116,32 @@
 	font-family: OpenSauceSansBlack;
 }
 
+.OpenSauceOneExtraBold {
+	font-family: OpenSauceOneExtraBold;
+}
+
 #thirdInServices {
 	margin-top: -0.3rem !important;
 }
 
+.button {
+	background-color: white !important;
+	width: fit-content !important;
+	text-decoration: none !important;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	transition: all 0.2s ease-in-out;
+}
+.button:hover {
+	box-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.3) !important;
+}
+
 iframe {
 	min-height: 300px;
+}
+
+footer p {
+	text-align: center;
 }
 
 @media (max-width: 992px) {
@@ -100,5 +149,21 @@ iframe {
 		font-size: 2rem !important;
 		font-weight: 600;
 		text-align: center;
+	}
+	#work_state {
+		position: absolute;
+		bottom: 1rem;
+		left: 0;
+		right: 0;
+	}
+}
+
+@media (min-width: 576px) {
+	footer p {
+		text-align: start;
+	}
+
+	footer p.ms-md-2 {
+		text-align: end;
 	}
 }

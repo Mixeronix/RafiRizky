@@ -5,14 +5,12 @@
 
 html {
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 /* width */
 ::-webkit-scrollbar {
 	width: 0.4rem;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
 	background-color: #f8f8f8;
@@ -130,10 +128,6 @@ html {
 	text-decoration: none !important;
 	padding: 1rem;
 	border-radius: 0.3rem;
-	transition: all 0.2s ease-in-out;
-}
-.button:hover {
-	box-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.3) !important;
 }
 
 iframe {

@@ -31,7 +31,7 @@ $data = json_decode($jsonString, true);
 
 
 ?>
-		<a style="text-decoration: none; color: #025cd1" href="index.html">
+		<a style="text-decoration: none; color: #025cd1" href="/">
 			<h1>Main Page</h1>
 		</a>
 
@@ -43,11 +43,7 @@ $data = json_decode($jsonString, true);
 
 			<br />
 
-			<input type="submit" name="checked" style="	background-color: white !important;
-	width: fit-content !important;
-	text-decoration: none !important;
-	padding: 0.5rem;
-	border-radius: 0.3rem;" />
+			<input type="submit" name="checked"/>
 		</form>
 	</body>
 </html>

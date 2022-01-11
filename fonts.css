@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "OpenSauceOneBlack";
+	src: url("fonts/OpenSauceOne-Black.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceOneBold";
+	src: url("fonts/OpenSauceOne-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceOneRegular";
+	src: url("fonts/OpenSauceOne-Regular.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceOneMedium";
+	src: url("fonts/OpenSauceOne-Medium.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceOneLight";
+	src: url("fonts/OpenSauceOne-Light.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceOneExtraBold";
+	src: url("fonts/OpenSauceOne-ExtraBold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceSansBlack";
+	src: url("fonts/OpenSauceSans-Black.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceSansMedium";
+	src: url("fonts/OpenSauceSans-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSauceSansSemiBold";
+	src: url("fonts/OpenSauceSans-SemiBold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
